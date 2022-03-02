@@ -35,3 +35,5 @@ jobs:
         name: sodium-artifacts-${{ steps.ref.outputs.branch }}
         # Filter built files to disregard -sources and -dev, and leave only the minecraft-compatible jars.
         path: build/libs/*[0-9].jar
+    - name: Super-Linter
+      uses: github/super-linter@v4.9.0
